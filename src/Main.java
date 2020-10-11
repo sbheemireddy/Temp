@@ -12,7 +12,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		System.out.println("hello");
+		System.out.println("hello world");
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-type","application/json")
 		.body(Payloads.addPlace()).when().post("/maps/api/place/add/json")
